@@ -1,10 +1,10 @@
-	pipeline {
+pipeline {
 agent any
 stages {
     stage('Checkout') {
        steps {
       // Checkout code from Git repository
-      git url: 'https://github.com/NAVEEN RAJ/program3.git', branch: 'main'
+      git url: 'https://github.com/Nandhini0307/program3.git', branch: 'main'
         	}
     	}
    stage('Build') {
@@ -37,4 +37,4 @@ stage('Deploy') {
     	failure {
         	echo 'Pipeline failed!'
     	}
-
+	}}
